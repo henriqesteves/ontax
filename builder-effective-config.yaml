@@ -1,0 +1,16 @@
+directories:
+  output: dist
+  buildResources: assets
+extends: null
+appId: ontax
+files:
+  - filter:
+      - dist/**/*
+      - build/**/*
+      - node_modules/**/*
+      - package.json
+win:
+  icon: public/ico.ico
+extraMetadata:
+  main: build/main.js
+electronVersion: 11.2.1
